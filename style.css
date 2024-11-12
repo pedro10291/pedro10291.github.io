@@ -82,6 +82,9 @@ header nav.menu-desktop ul li{
     color: #ff0763;
     font-size: 35px;
 }
+.btn-abrir i{
+    display: none;
+}
 .menu-mobile{
     background-color: #134;
     height: 100vh;
@@ -156,6 +159,7 @@ section.topo-site .flex{
     font-size: 30px;
     color:#dbdbdb;
     margin: 35px;
+    text-align: justify;
 }
 
 .topo-site, .txt-topo-site p span{
@@ -297,8 +301,7 @@ section.Sobre, .flex{
     right: 5px;
     display: flex;
 }
-
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 980px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
@@ -308,6 +311,10 @@ section.Sobre, .flex{
     .menu-desktop, .btn-contato{
         display: none;
     }
+    .btn-abrir i{
+        display: block;
+    }
+
     /* TOPO SITE */
     section.topo-site{
         padding: 40px 8%;

@@ -298,7 +298,7 @@ section.Sobre, .flex{
     display: flex;
 }
 
-@media screen and (max-width: 933px){
+@media screen and (max-width: 1020px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;

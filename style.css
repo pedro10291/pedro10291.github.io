@@ -148,7 +148,8 @@ section.topo-site .flex{
 .topo-site h1{
     color: #dbdbdb;
     font-size: 42px ;
-    line-height: 40px;
+    line-height: 45px;
+    text-align: justify;
 }
 
 .topo-site, .txt-topo-site h1 span{
@@ -159,7 +160,7 @@ section.topo-site .flex{
     font-size: 30px;
     color:#dbdbdb;
     margin: 35px;
-    text-align: justify;
+    text-align: center, justify;
 }
 
 .topo-site, .txt-topo-site p span{
@@ -305,7 +306,7 @@ section.Sobre, .flex{
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
-        padding: 0x 4px;
+        padding: 0 4px;
     }
     /* CABEÇALHO */
     .menu-desktop, .btn-contato{
@@ -314,7 +315,6 @@ section.Sobre, .flex{
     .btn-abrir i{
         display: block;
     }
-
     /* TOPO SITE */
     section.topo-site{
         padding: 40px 8%;

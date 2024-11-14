@@ -54,8 +54,9 @@
     </button>
     </section><!-- /REDES -->
 </main>
-        <form action="https://formsubmit.co/el/hafevu" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="POST">
         <h1>Me mande uma Mensagem!</h1>
+        <input type="hidden" name="accessKey" value="7e0952e6-2cfc-4202-85a4-478b7faf8569"> 
         <label>Nome/Empresa: <input type="text" name="Nome" id="Nome" placeholder="digite um nome." required></label>
         <label>E-mail: <input type="email" placeholder="digite um email." required></label>
         <h3>Motivo da Mensagem:</h3>
@@ -67,13 +68,9 @@
         <div class="area-texto">
         <textarea name="Mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
     </div>
-        <button type="submit" id="Enviar">Enviar</button>
-
+    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+    <input type="text" name="honeypot" style="display: none;">
+    <button type="submit" id="Enviar" >Enviar</button>
     </form>
-    </section>
-    <section class="Voltar">
-        <a href="index.html">
-            <button>Portfolio</button>
-        </a>
     </body>
     </html>

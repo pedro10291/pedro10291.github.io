@@ -15,9 +15,12 @@
         height: 100;
     }
     
-.container{
-    text-align: center;
-}
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh; /* Ajuste a altura conforme necessário */
+    }
 .container img{
     border-radius: 50%;
 }
@@ -32,6 +35,11 @@ h2{
     color: #dbdbdb;
     text-align: center;
 }
+h2 span{
+    font-size: 23px;
+    color: #ff0763;
+    text-align: center;
+}
 h3{
     font-size: 15px;
     text-align: center;
@@ -41,22 +49,22 @@ p{
     padding: 7px 38%;
     font-size: 15px;
     color: #dbdbdb;
-    text-align: justify center;
+    text-align: justify;
     text-transform:inherit;
 }
 p span{
     color: #ff0763;
 }
-.REDES{
+.REDES {
     padding: 8px 10%;
     text-align: center;
 }
-.REDES button{
+.REDES button {
     padding: 20px 30px;
     font-size: 18px;
     font-weight: 500px;
     margin: 0 5px;
-    background-color: #ff0763;
+    background-color: #134;
     border: 0;
     border-radius: 60px;
     cursor: pointer;
@@ -64,71 +72,14 @@ p span{
     transition: 0.2s;
 }
 button:hover{
-    box-shadow: 0 0 20px #ff0763;
+    box-shadow: 10px 5px 20px #ff07626e;
 }
 i{
     font-size: 35px;
     color: #dbdbdb;
 }
-form{
-    padding: 80px 4%;
-}
-Form{
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10%;
-    background-color: #134;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-section.campo-texto{
-    max-width: 500px;
-    min-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-form input{
-    padding: 2px;
-    flex-direction: column;
-    font-size: 15px;
-    background-color: rgb(26, 57, 73);
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    border: 0;
-    outline: 0;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-label{
-    align-items: center;
-    text-align: justify;
-    flex-direction: column;
-    gap: 10px;
-    color: #dbdbdb;
-}
-.pointer{
-    cursor: pointer;
-}
-.Voltar{
-    padding: 50px;
-    text-align: center;
-}
-textarea{
-    padding: 20px;
-    width: 300px;
-}
-#Enviar{
+.voltar{
     padding: 15px 20px;
-    font-size: 18px;
-    font-weight: 50px;
-    margin: 0 ;
     background-color: #ff0763;
     border: 0;
     border-radius: 80px;
@@ -136,34 +87,30 @@ textarea{
     color: white;  
     transition: 0.2s;
 }
+
 @media (max-width: 999px) {
     /* Adjust for smaller screens */
-
+    .flex{
+        display: flex;
+    }
 h1{
     text-align: center;
     padding: 0px 4%;   
     font-size: 20px;
 }        
 p{
-    text-align: center;
-    padding: 0 5%;
+    text-align:center;
+    padding: 5px 5%;
 }
 .REDES button{
-    margin-bottom: 8px;
+    background-color: #134;
+    padding: 0.8em 1.3em;
+    font-size: 0.8em;
 }
-form {
-    padding: 10px; 
-    height: 80%;
-    width: 90%;
-    border-radius: 5%;
+.voltar{
+    font-size: 17px;
 }
 h1, h2, h3 {
     font-size: 1.2em;
-}
-textarea{
-    width: 200px;
-}
-label, input, textarea {
-    font-size: 14px;
 }
 }

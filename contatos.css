@@ -72,7 +72,7 @@ p span{
     transition: 0.2s;
 }
 button:hover{
-    box-shadow: 10px 5px 20px #ff07626e;
+    transform: scale(1.05);
 }
 i{
     font-size: 35px;
@@ -104,8 +104,11 @@ p{
 }
 .REDES button{
     background-color: #134;
-    padding: 0.8em 1.0em;
+    padding: 1.9em 1.0em;
     font-size: 0.8em;
+}
+i{
+transform: scale(1.05);
 }
 .voltar{
     font-size: 17px;

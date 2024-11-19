@@ -359,4 +359,36 @@ section.Sobre, .flex{
     section.Projetos .flex{
         gap: 40px;
     }
+    .txt-animado{
+        justify-content: flex-start;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .txt-animado span{
+        position: relative;
+    }
+    
+    .txt-animado span::before{
+        content: "";
+        color: #ff0763;
+        animation: palavras 2s infinite;
+    }
+    
+    @keyframes palavras {
+        0%,100%{content: "Desenvolvedor Front-end.";
+    } 
+    }
+    @keyframes cursor{
+        0%{
+            border-left: 2px solid #134
+        }
+    }
+    @keyframes digita{
+        10%, 15%, 30%, 35%, 50%, 70%, 75%, 90%, 95%{
+            width: 0;
+        }
+        5%, 20%, 25%, 45%, 60%, 65%, 80%, 85%{
+            width:calc(100% + 15px);;
+        }
+    }
 }

@@ -503,13 +503,13 @@ section.Sobre, .flex{
     }
     .cookieb .cookies{
         display: flex;
-        align-items: center;
+        flex-direction: column;
         text-align: justify;
         padding: 20px;
         color: #134;
     }
     .cookieb .ck-btn{
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .cookieb .ck-btn button{
         background-color: #ff0763;
@@ -517,6 +517,7 @@ section.Sobre, .flex{
         font-weight: 500;
         font-size: 15px;
         padding: 5px 20px;
+        margin-top: 20%;
         border: none;
         outline: none;
         transition: .2s;

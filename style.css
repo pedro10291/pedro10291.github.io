@@ -475,4 +475,54 @@ section.Sobre, .flex{
             width:calc(100% + 15px);;
         }
     }
+    #cookie-banner {
+        position: fixed;
+        bottom: -100px; /* Inicialmente fora da tela */
+        left: 0;
+        right: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+        text-align: center;
+        z-index: 9999;
+        transition: bottom 0.5s ease-in-out;
+      }
+      
+    .cookieb{
+        width: 80%;
+        background-color: #dbdbdb;
+        position: fixed;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 15px;
+        display: none;
+    }
+    .cookieb.mostrar{
+        display: block;
+    }
+    .cookieb .cookies{
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        color: #134;
+    }
+    .cookieb .ck-btn{
+        margin-left: 30px;
+    }
+    .cookieb .ck-btn button{
+        background-color: #ff0763;
+        color:#dbdbdb ;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 5px 20px;
+        border: none;
+        outline: none;
+        transition: .2s;
+        cursor: pointer;
+    }
+    .cookieb .ck-btn button:hover{
+        transform: scale(0.9);
+    }
 }

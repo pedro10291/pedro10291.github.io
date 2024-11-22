@@ -1,0 +1,122 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    }
+.flex{
+        display: flex;
+    }
+    body{
+        background-color: #134;
+        height: 100;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+.container img{
+    border-radius: 50%;
+}
+h1{
+    font-size: 25px;
+    color: #dbdbdb;
+    text-align: center;
+}
+h2{
+    padding: 5px;
+    font-size: 20px;
+    color: #dbdbdb;
+    text-align: center;
+}
+h2 span{
+    font-size: 23px;
+    color: #ff0763;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    text-align: center;
+    color: #dbdbdb;
+}
+p{
+    padding: 7px 38%;
+    font-size: 15px;
+    color: #dbdbdb;
+    text-align: center;
+    text-transform:inherit;
+}
+p span{
+    color: #ff0763;
+}
+.REDES {
+    padding: 8px 10%;
+    text-align: center;
+}
+.REDES button {
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 500px;
+    margin: 0 5px;
+    background-color: #134;
+    border: 0;
+    border-radius: 60px;
+    cursor: pointer;
+    color: white;  
+    transition: 0.2s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+i{
+    font-size: 35px;
+    color: #dbdbdb;
+}
+.voltar{
+    padding: 15px 50px;
+    background-color: #ff0763;
+    border: 0;
+    border-radius: 80px;
+    cursor: pointer;
+    color: white;  
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust for smaller screens */
+    .container {
+        padding: 10px;
+      }
+h1{
+    text-align: center;
+    padding: 0px 4%;   
+    font-size: 20px;
+}        
+p{
+    text-align:center;
+    padding: 5px 5%;
+    color: #dbdbdb;
+    text-decoration: none;
+}
+.REDES button{
+    background-color: #134;
+    padding: 1.9em 1.0em;
+    font-size: 0.8em;
+}
+i{
+transform: scale(1.05);
+}
+.voltar{
+    font-size: 17px;
+}
+h1, h2, h3 {
+    font-size: 1.2em;
+}
+}

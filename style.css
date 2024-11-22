@@ -121,7 +121,7 @@ header nav ul{
 }
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 100px;
     justify-content: center;
 }
 
@@ -233,18 +233,20 @@ section.topo-site .flex{
 
 /* Estilo especialidades */
     section.Especialidades{
-        padding: 40px 4%;
+        padding: 45px 4%;
     }
     section.Especialidades .flex{
         gap: 60px;
     }
     
 .Especialidades-box{
+        max-width: 30%;
         color:#dbdbdb;
-        padding: 40px;
+        padding: 40px 4%;
         border-radius: 10%;
         margin-top: 25px;
         transition: .2s;
+        justify-content: center;
     }
     .Especialidades-box:hover{
         transform: scale(1.05);
@@ -266,7 +268,7 @@ section.topo-site .flex{
 /* <!--SOBRE--> */
 section.Sobre
 {
-    padding: 10% 4%;
+    padding: 15% 4%;
 }
 section.Sobre, .flex{
     align-items: center;
@@ -315,7 +317,73 @@ section.Sobre, .flex{
     right: 5px;
     display: flex;
 }
-@media screen and (max-width: 980px){
+.rodape{
+    padding: 20px;
+    text-align: center;
+    color: #dbdbdb;
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: -100px; /* Inicialmente fora da tela */
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    transition: bottom 0.5s ease-in-out;
+  }
+  
+.cookieb{
+    width: 80%;
+    background-color: #dbdbdb;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    display: none;
+}
+.cookieb.mostrar{
+    display: block;
+}
+.cookieb .cookies{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    color: #134;
+}
+.cookieb .ck-btn{
+    margin-left: 30px;
+}
+.cookieb .ck-btn button{
+    background-color: #ff0763;
+    color:#dbdbdb ;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    transition: .2s;
+    cursor: pointer;
+}
+.cookieb .ck-btn button:hover{
+    transform: scale(0.9);
+}
+
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+@media screen and (max-width: 750px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
@@ -330,19 +398,35 @@ section.Sobre, .flex{
     }
     /* TOPO SITE */
     section.topo-site{
-        padding: 40px 8%;
+        padding: 0 8%;
+        margin-top: 0%;
     }
     .topo-site h1{
         align-items: center;
     }
     .topo-site, .txt-topo-site p{
-        font-size: 25px;
+        font-size: 20px;
         margin: 20px;
         margin-top: 5%;
+        text-align: justify, center;
     }
     /*especialidades*/
     section.Especialidades{
-        padding: 40px 8%;
+        display: flex;
+
+    }
+    .Especialidades-box{
+        color:#dbdbdb;
+        border-radius: 10%;
+        margin-top: 25px;
+        transition: .2s;
+        text-align: justify;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .Especialidades-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #ff0763;
     }
     .img{
         width:100%;
@@ -355,9 +439,6 @@ section.Sobre, .flex{
         border-radius: 50px;
         transition: 8s;  
         position: relative;
-    }
-    section.Projetos .flex{
-        gap: 40px;
     }
     .txt-animado{
         justify-content: flex-start;
@@ -372,6 +453,9 @@ section.Sobre, .flex{
         content: "";
         color: #ff0763;
         animation: palavras 2s infinite;
+    }
+    .btn-redes{
+        text-align: center;
     }
     
     @keyframes palavras {

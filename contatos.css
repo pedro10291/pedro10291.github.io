@@ -17,10 +17,10 @@
     
     .container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 50vh; /* Ajuste a altura conforme necessário */
-    }
+        padding: 20px;
+      }
 .container img{
     border-radius: 50%;
 }
@@ -49,7 +49,7 @@ p{
     padding: 7px 38%;
     font-size: 15px;
     color: #dbdbdb;
-    text-align: justify;
+    text-align: center;
     text-transform:inherit;
 }
 p span{
@@ -79,20 +79,21 @@ i{
     color: #dbdbdb;
 }
 .voltar{
-    padding: 15px 20px;
+    padding: 15px 50px;
     background-color: #ff0763;
     border: 0;
     border-radius: 80px;
     cursor: pointer;
     color: white;  
     transition: 0.2s;
+    font-size: 15px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     /* Adjust for smaller screens */
-    .flex{
-        display: flex;
-    }
+    .container {
+        padding: 10px;
+      }
 h1{
     text-align: center;
     padding: 0px 4%;   
@@ -101,6 +102,8 @@ h1{
 p{
     text-align:center;
     padding: 5px 5%;
+    color: #dbdbdb;
+    text-decoration: none;
 }
 .REDES button{
     background-color: #134;

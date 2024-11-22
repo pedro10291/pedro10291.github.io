@@ -11,3 +11,16 @@ menu.addEventListener('click', ()=>{
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+var msgCookies = document.getElementById('cookie-txt')
+
+function aceito(){
+    localStorage.lgpd = "sim"
+    msgCookies.classList.remove('mostrar')
+}
+
+if(localStorage.lgpd == 'sim'){
+    msgCookies.classList.remove('mostrar')
+}else{
+    msgCookies.classList.add('mostrar')
+}

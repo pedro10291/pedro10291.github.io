@@ -265,6 +265,66 @@ section.topo-site .flex{
 
 /* /Estilo especialidades */
 
+@font-face {
+    font-family: "Dinish Condensed";
+    src:
+      url("https://db.onlinewebfonts.com/t/29c173305b69e7ccc02f0f0106924705.woff2") format("woff2");
+  }
+  
+  body {
+    background: #134;
+  }
+  
+  .container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 2rem;
+    justify-content: center;
+    &.light {
+      background: #dbdbdb;
+    }
+  }
+  
+  logo-icon {
+    --size: 128px;
+    --default-font: "Neutra Text", "Dinish Condensed", sans-serif;
+    /* --default-font: "Dinish Condensed", sans-serif; */
+    
+    display: grid;
+    place-items: end;
+    padding: calc(0.05 * var(--size)) calc(0.1 * var(--size));
+    box-sizing: border-box;
+    width: var(--size);
+    aspect-ratio: 1;
+    
+    font-size: calc(0.3 * var(--size));
+    font-weight: 700;
+    
+    background: var(--bgcolor);
+    color: #ffffff;
+    
+    &[modern] {
+      box-shadow: -3px -3px 10px #0005 inset;
+      border-radius: 5px / 5px;
+    }
+    
+    &[html] { --bgcolor: #dc6e3d }
+    &[css] { 
+      --bgcolor: rebeccapurple;
+      --r: calc(0.2 * var(--size)); 
+      border-radius: 0 var(--r) var(--r) var(--r);
+    }
+    &[js] { 
+      --bgcolor: #f8dc3e; 
+      color: #383737;
+    }
+    &[ts] { --bgcolor: #3178c6 }
+    &[wa] { 
+      --bgcolor: #5f52df;
+      mask-image: radial-gradient(calc(0.35 * var(--size)) at 50% 0, transparent 50%, black 52%);
+    }
+  }
+
 /* <!--SOBRE--> */
 section.Sobre
 {

@@ -40,11 +40,12 @@ Este é o meu portfólio online, desenvolvido com HTML, CSS e JavaScript.
 
 ## Demonstração
 
-[Image of Print do seu portfólio]
+[![Captura de Tela 2024-11-26 às 21 11 04](https://github.com/user-attachments/assets/78557f17-4c84-4db9-8fbe-b30b3a61b660)
+]
 
 ## Link para o Portfólio
 
-[Link do seu portfólio online] 
+[https://pedro10291.github.io] 
 
 ## Contato
 

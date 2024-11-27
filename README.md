@@ -11,7 +11,7 @@ Este é o meu portfólio online, desenvolvido com HTML, CSS e JavaScript.
 * **Menu Mobile:** Menu responsivo para dispositivos móveis com links para as seções "Início", "Especialidades", "Sobre" e "Contato".
 
 ### Topo do Site
-* **Título:** "React & Vue.js"
+* **Título:** "Desenvolvedor Front-end."
 * **Descrição:**  Apresentação concisa como desenvolvedor Front-End em formação, com foco em React & Vue.js.
 * **Chamada para Ação:** Botão "Entre em Contato" que leva à página de contato.
 

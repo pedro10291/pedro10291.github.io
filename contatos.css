@@ -46,11 +46,13 @@ h3{
     color: #dbdbdb;
 }
 p{
-    padding: 7px 38%;
+    padding: 7px 0; /* Removido o padding lateral */
     font-size: 15px;
     color: #dbdbdb;
     text-align: center;
     text-transform:inherit;
+    width: 100%; /* O parágrafo ocupa toda a largura disponível */
+    box-sizing: border-box; /* Padding e borda inclusos no cálculo da largura */
 }
 p span{
     color: #ff0763;
@@ -88,6 +90,29 @@ i{
     transition: 0.2s;
     font-size: 15px;
 }
+/* */
+section.Sobre
+{
+    padding: 1% 4%;
+}
+
+.sobre, .txt-sobre{
+    color:#dbdbdb;
+}
+
+.sobre, .txt-sobre p{
+    max-width: 100%;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: justify;
+    hyphens: auto;
+}
+.sobre, .txt-sobre p span{
+    color: #ff0763;
+    font-weight: 500;
+    font-size: 17;
+}
+/* */
 
 @media (max-width: 768px) {
     /* Adjust for smaller screens */
@@ -118,5 +143,35 @@ transform: scale(1.05);
 }
 h1, h2, h3 {
     font-size: 1.2em;
+}
+
+.sobre, .txt-sobre{
+    color:#dbdbdb;
+}
+.sobre, .txt-sobre h2{
+    text-align: center; /* Centralizado para evitar overflow */
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    word-wrap: break-word; /* Quebra de palavras longas */ 
+}
+.sobre, .txt-sobre h2 span{
+    text-align: center; /* Centralizado para evitar overflow */
+    color: #ff0763;
+    display: block;
+    font-size: 40px;
+    word-wrap: break-word; /* Quebra de palavras longas */ 
+}
+.sobre, .txt-sobre p{
+    max-width: 100%; /* Largura relativa à tela */
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: justify;
+    hyphens: auto;
+}
+.sobre, .txt-sobre p span{
+    color: #ff0763;
+    font-weight: 500;
+    font-size: 17;
 }
 }

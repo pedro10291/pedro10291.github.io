@@ -298,6 +298,11 @@ section.Sobre, .flex{
     margin: 15px 0;
     text-align: justify;
 }
+.sobre, .txt-sobre p span{
+    color: #ff0763;
+    font-weight: 500;
+    font-size: 17;
+}
 .sobre, .txt-sobre .btn-redes button{
     width: 60px;
     height: 60px;

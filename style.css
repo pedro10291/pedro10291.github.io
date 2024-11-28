@@ -269,65 +269,6 @@ section.topo-site .flex{
 
 /* /Estilo especialidades */
 
-@font-face {
-    font-family: "Dinish Condensed";
-    src:
-      url("https://db.onlinewebfonts.com/t/29c173305b69e7ccc02f0f0106924705.woff2") format("woff2");
-  }
-  
-  body {
-    background: #134;
-  }
-  
-  .container {
-    display: flex;
-    gap: 0.5rem;
-    padding: 2rem;
-    justify-content: center;
-    &.light {
-      background: #dbdbdb;
-    }
-  }
-  
-  logo-icon {
-    --size: 128px;
-    --default-font: "Neutra Text", "Dinish Condensed", sans-serif;
-    /* --default-font: "Dinish Condensed", sans-serif; */
-    
-    display: grid;
-    place-items: end;
-    padding: calc(0.05 * var(--size)) calc(0.1 * var(--size));
-    box-sizing: border-box;
-    width: var(--size);
-    aspect-ratio: 1;
-    
-    font-size: calc(0.3 * var(--size));
-    font-weight: 700;
-    
-    background: var(--bgcolor);
-    color: #ffffff;
-    
-    &[modern] {
-      box-shadow: -3px -3px 10px #0005 inset;
-      border-radius: 5px / 5px;
-    }
-    
-    &[html] { --bgcolor: #dc6e3d }
-    &[css] { 
-      --bgcolor: rebeccapurple;
-      --r: calc(0.2 * var(--size)); 
-      border-radius: 0 var(--r) var(--r) var(--r);
-    }
-    &[js] { 
-      --bgcolor: #f8dc3e; 
-      color: #383737;
-    }
-    &[ts] { --bgcolor: #3178c6 }
-    &[wa] { 
-      --bgcolor: #5f52df;
-      mask-image: radial-gradient(calc(0.35 * var(--size)) at 50% 0, transparent 50%, black 52%);
-    }
-  }
 
 /* <!--SOBRE--> */
 section.Sobre
@@ -447,11 +388,30 @@ section.Sobre, .flex{
       opacity: 0;
     }
   }
+  .btn-redes{
+    display: none;
+    visibility: hidden;
+  }
 @media screen and (max-width: 750px){
     /* CLASSE GERAL */
     .flex{
         flex-direction: column;
-        padding: 0 4px;
+    }
+    section#Sobre {
+        display: none;
+        visibility: hidden;
+      }
+      .txt-topo-site {
+        width: 100%;
+        align-items: center;
+        text-align: center; 
+        hyphens: auto;
+    }
+      .txt-topo-site .entrecontato { 
+        max-width: 100%;
+        margin: 0 auto; 
+
+
     }
     /* CABEÇALHO */
     .menu-desktop, .btn-contato{
@@ -462,21 +422,31 @@ section.Sobre, .flex{
     }
     /* TOPO SITE */
     section.topo-site{
-        padding: 0 8%;
-        margin-top: 0%;
+        padding: 45px 0;
     }
+    .container {
+        overflow: hidden; /* Impede que o conteúdo transborde */
+        box-sizing: border-box; /* Inclui padding e border no tamanho do elemento */
+      }
     .topo-site h1{
         align-items: center;
+        font-size: 35px;
+        text-align: left;
     }
-    .topo-site, .txt-topo-site p{
-        padding: 0;
-        justify-content: flex-start;
-        font-size: 17px;
-        margin: 20px;
-        margin-top: 5%;
-        justify-content: center;
-        text-align: justify;
+    .txt-topo-site p {
+        font-size: 20px;
+        color: #dbdbdb;
+        padding: 20px 0;  
+        text-align: justify;  
+        margin: 15px;
+
     }
+    .txt-topo-site p span{
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    
     /*especialidades*/
     section.Especialidades{
         display: flex;
@@ -495,81 +465,10 @@ section.Sobre, .flex{
         transform: scale(1.05);
         box-shadow: 0 0 25px #ff0763;
     }
-    .img{
-        width:100%;
-        margin: 0 auto;
-        height: 460px;
-        background-color: #ff0763;
-        box-shadow: 0 0 5px #ff0763;
-        background-size: cover;
-        background-position: 100% 0;
-        border-radius: 50px;
-        transition: 8s;  
-        position: relative;
-    }
 
-    @font-face {
-        font-family: "Dinish Condensed";
-        src:
-          url("https://db.onlinewebfonts.com/t/29c173305b69e7ccc02f0f0106924705.woff2") format("woff2");
-      }
-      
-      body {
-        background: #134;
-      }
-      
-      .container {
-        display: flex;
-        gap: 0.5rem;
-        padding: 2rem;
-        justify-content: center;
-        &.light {
-          background: #134;
-        }
-      }
-      
-      logo-icon {
-        --size: 110px;
-        --default-font: "Neutra Text", "Dinish Condensed", sans-serif;
-        /* --default-font: "Dinish Condensed", sans-serif; */
-        
-        display: grid;
-        place-items: end;
-        padding: calc(0.05 * var(--size)) calc(0.1 * var(--size));
-        box-sizing: border-box;
-        width: var(--size);
-        aspect-ratio: 1;
-        
-        font-size: calc(0.3 * var(--size));
-        font-weight: 700;
-        
-        background: var(--bgcolor);
-        color: #ffffff;
-        
-        &[modern] {
-          box-shadow: -3px -3px 10px #0005 inset;
-          border-radius: 5px / 5px;
-        }
-        
-        &[html] { --bgcolor: #dc6e3d }
-        &[css] { 
-          --bgcolor: rebeccapurple;
-          --r: calc(0.2 * var(--size)); 
-          border-radius: 0 var(--r) var(--r) var(--r);
-        }
-        &[js] { 
-          --bgcolor: #f8dc3e; 
-          color: #383737;
-        }
-        &[ts] { --bgcolor: #3178c6 }
-        &[wa] { 
-          --bgcolor: #5f52df;
-          mask-image: radial-gradient(calc(0.35 * var(--size)) at 50% 0, transparent 50%, black 52%);
-        }
-      }
     .txt-animado{
         justify-content: flex-start;
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 500;
     }
     .txt-animado span{
@@ -601,6 +500,27 @@ section.Sobre, .flex{
         5%, 20%, 25%, 45%, 60%, 65%, 80%, 85%{
             width:calc(100% + 15px);;
         }
+    }
+    .btn-redes{
+        display: block;
+        visibility: visible;
+    }
+    .btn-redes{
+        padding: 5px;
+        text-align: center;
+    }
+    .btn-redes button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #ff0763;
+        font-size: 20px;
+        color: #134;
+        align-items:last baseline;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: .2s;
     }
     #cookie-banner {
         position: fixed;
@@ -653,4 +573,5 @@ section.Sobre, .flex{
     .cookieb .ck-btn button:hover{
         transform: scale(0.9);
     }
+
 }

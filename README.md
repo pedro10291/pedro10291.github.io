@@ -40,7 +40,8 @@ Este é o meu portfólio online, desenvolvido com HTML, CSS e JavaScript.
 
 ## Demonstração
 
-![Captura de Tela 2024-11-26 às 21 11 04](https://github.com/user-attachments/assets/78557f17-4c84-4db9-8fbe-b30b3a61b660)
+![Captura de Tela 2024-11-28 às 14 01 26](https://github.com/user-attachments/assets/471aaf4b-48bd-47a4-ac6e-1e883d4c1a59)
+
 
 
 
